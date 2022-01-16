@@ -20,6 +20,15 @@ endif::[]
 
 This is the general steps in order that I use to setup a new Mac
 
+=== First link python3 from python2
+
+[source,bash]
+
+% export PATH=/usr/local/bin:${PATH}
+% cd /usr/local/bin
+% ln -s -f pip3 pip
+% ln -s -f easy_install-3.* easy_install
+
 == Homebrew
 
 Install {uri-homebrew}[Homebrew] via the CLI
